@@ -1,0 +1,25 @@
+#include <stdio.h>
+void dowork(int *a,int *b);
+int main() {
+    // Write C code here
+    int a,b;
+    int sum,prod,avg;
+    printf("Enter A:\n");
+    scanf("%d",&a);
+    printf("Enter B:\n");
+    scanf("%d",&b);
+    
+    dowork(&a,&b);
+    return 0;
+}
+void dowork(int *a,int *b)
+{
+    if(*a>*b){
+        printf("A is greatest");
+    }
+    else if(*b>*a){
+    printf("B is greatest");
+    }
+    else 
+    printf("They are equal");
+}
